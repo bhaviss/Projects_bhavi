@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>University Management System</h1>
+
+    <!-- Success/Error Message Display -->
+    {% if success %}
+    <div class="message success">{{ success }}</div>
+    {% elif error %}
+    <div class="message error">{{ error }}</div>
+    {% endif %}
+
+    <div class="form-container">
+        <h2>Add New Student</h2>
+        <form method="POST" action="/add_student">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="roll_number">Roll Number</label>
+            <input type="text" id="roll_number" name="roll_number" required>
+
+            <label for="subject_id">Subject</label>
+            <select id="subject_id" name="subject_id" required>
+                {% for subject in subjects %}
+                    <option value="{{ subject.subject_id }}">{{ subject.subject_name }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="grade">Grade</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Add New Staff</h2>
+        <form method="POST" action="/add_staff">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="contact_number">Contact Number</label>
+            <input type="text" id="contact_number" name="contact_number" required>
+
+            <button type="submit">Add Staff</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Add Meal Plan</h2>
+        <form method="POST" action="/add_meal_plan">
+            <label for="student_id">Student ID</label>
+            <input type="number" id="student_id" name="student_id" required>
+
+            <label for="meal_plan">Meal Plan</label>
+            <input type="text" id="meal_plan" name="meal_plan" required>
+
+            <button type="submit">Add Meal Plan</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Student List</h2>
+        <form method="GET" action="/students">
+            <input type="text" id="studentFilter" name="name" placeholder="Search for students by name...">
+            <button type="submit">Search</button>
+        </form>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                    <tr>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.roll_number }}</td>
+                        <td>{{ student.subject_name }}</td>
+                        <td>{{ student.grade }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Staff List</h2>
+        <form method="GET" action="/staff">
+            <input type="text" id="staffFilter" name="name" placeholder="Search for staff by name...">
+            <button type="submit">Search</button>
+        </form>
+        <table id="staffTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Contact Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for staff in staff_data %}
+                    <tr>
+                        <td>{{ staff.name }}</td>
+                        <td>{{ staff.position }}</td>
+                        <td>{{ staff.contact_number }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Search functionality for students (Frontend filtering)
+        document.getElementById('studentFilter').addEventListener('input', function() {
+            var filter = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#studentsTable tbody tr');
+            rows.forEach(function(row) {
+                var cells = row.querySelectorAll('td');
+                var name = cells[0].textContent.toLowerCase();
+                if (name.indexOf(filter) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Search functionality for staff (Frontend filtering)
+        document.getElementById('staffFilter').addEventListener('input', function() {
+            var filter = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#staffTable tbody tr');
+            rows.forEach(function(row) {
+                var cells = row.querySelectorAll('td');
+                var name = cells[0].textContent.toLowerCase();
+                if (name.indexOf(filter) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
