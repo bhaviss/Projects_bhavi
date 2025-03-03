@@ -1,0 +1,47 @@
+2024-12-05 16:39:20,427 - INFO - Authentication successful for user: admin
+2024-12-05 16:39:42,961 - INFO - Listed files from server.
+2024-12-05 16:41:24,024 - INFO - File uploaded: Uploadfile.txt
+2024-12-05 16:42:06,323 - INFO - File downloaded: file.txt
+2024-12-05 16:42:32,641 - INFO - Delete response: File Sample.txt deleted successfully.
+2024-12-05 16:42:35,927 - INFO - Client exited.
+2024-12-05 16:51:10,604 - WARNING - Authentication failed for user: admin
+2024-12-05 16:51:36,502 - INFO - Authentication successful for user: admin
+2024-12-05 16:51:48,280 - INFO - File uploaded: Sample.txt
+2024-12-05 16:52:01,401 - INFO - File downloaded: File.txt
+2024-12-05 16:52:05,075 - INFO - Listed files from server.
+2024-12-05 16:52:16,313 - INFO - Client exited.
+2024-12-13 11:47:24,953 - INFO - Authentication successful for user: admin
+2024-12-13 11:48:15,377 - INFO - Listed files from server.
+2024-12-13 11:51:39,795 - ERROR - Upload error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 12:00:49,880 - INFO - Client exited.
+2024-12-13 12:09:41,052 - WARNING - Authentication failed for user: admin
+2024-12-13 12:12:51,809 - WARNING - Authentication failed for user: admin
+2024-12-13 12:13:13,136 - INFO - Authentication successful for user: admin
+2024-12-13 12:13:18,340 - INFO - Listed files from server.
+2024-12-13 12:16:15,917 - INFO - Authentication successful for user: admin
+2024-12-13 12:22:02,143 - INFO - Authentication successful for user: admin
+2024-12-13 12:29:17,739 - ERROR - Download error: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-13 19:33:48,849 - INFO - Authentication successful for user: admin
+2024-12-13 19:34:10,037 - INFO - File uploaded: Sample.txt
+2024-12-13 19:34:33,609 - INFO - Listed files from server.
+2024-12-13 19:44:36,453 - INFO - Client exited.
+2024-12-13 19:45:15,344 - INFO - Authentication successful for user: admin
+2024-12-13 19:49:24,504 - INFO - Authentication successful for user: admin
+2024-12-14 13:02:44,366 - WARNING - Authentication failed for user: admin
+2024-12-14 13:04:17,988 - INFO - Authentication successful for user: user1
+2024-12-14 13:04:22,425 - INFO - Listed files from server.
+2024-12-14 13:09:14,938 - INFO - Authentication successful for user: user1
+2024-12-14 13:09:20,202 - INFO - Listed files from server.
+2024-12-14 13:09:31,914 - INFO - File uploaded: Sample.txt
+2024-12-14 13:24:07,655 - WARNING - Authentication failed for user: user1
+2024-12-14 13:26:16,335 - INFO - Authentication successful for user: user1
+2024-12-14 13:26:50,358 - INFO - Listed files from server.
+2024-12-14 13:27:10,805 - INFO - File uploaded: Example.txt
+2024-12-14 13:27:24,841 - WARNING - Invalid menu option selected.
+2024-12-14 13:27:39,102 - INFO - Delete response: File Ts.txt deleted successfully.
+2024-12-14 13:35:32,436 - INFO - Authentication successful for user: user1
+2024-12-14 13:35:41,392 - INFO - Client exited.
+2024-12-14 13:36:27,525 - WARNING - Authentication failed for user: user1
+2024-12-14 13:36:40,708 - INFO - Authentication successful for user: user1
+2024-12-14 13:44:08,466 - INFO - Authentication successful for user: user1
+2024-12-14 13:45:52,982 - INFO - Authentication successful for user: user1

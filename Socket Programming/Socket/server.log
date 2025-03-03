@@ -1,0 +1,73 @@
+2024-12-14 12:58:40,063 - INFO - Server started on 0.0.0.0:12347
+2024-12-14 13:02:02,407 - INFO - Server started on 0.0.0.0:12347
+2024-12-14 13:02:43,899 - INFO - Client connected: ('192.168.1.201', 65119)
+2024-12-14 13:02:43,899 - INFO - Received command: AUTH admin password123 from ('192.168.1.201', 65119)
+2024-12-14 13:02:43,906 - INFO - Client disconnected: ('192.168.1.201', 65119)
+2024-12-14 13:04:17,525 - INFO - Client connected: ('192.168.1.201', 65121)
+2024-12-14 13:04:17,525 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65121)
+2024-12-14 13:04:17,532 - INFO - Client disconnected: ('192.168.1.201', 65121)
+2024-12-14 13:04:21,958 - INFO - Client connected: ('192.168.1.201', 65122)
+2024-12-14 13:04:21,960 - INFO - Received command: LIST from ('192.168.1.201', 65122)
+2024-12-14 13:04:21,969 - INFO - Client disconnected: ('192.168.1.201', 65122)
+2024-12-14 13:09:14,487 - INFO - Client connected: ('192.168.1.201', 65148)
+2024-12-14 13:09:14,487 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65148)
+2024-12-14 13:09:14,495 - INFO - Client disconnected: ('192.168.1.201', 65148)
+2024-12-14 13:09:19,749 - INFO - Client connected: ('192.168.1.201', 65152)
+2024-12-14 13:09:19,749 - INFO - Received command: LIST from ('192.168.1.201', 65152)
+2024-12-14 13:09:19,760 - INFO - Client disconnected: ('192.168.1.201', 65152)
+2024-12-14 13:09:31,211 - INFO - Client connected: ('192.168.1.201', 65155)
+2024-12-14 13:09:31,211 - INFO - Received command: UPLOAD Sample.txt from ('192.168.1.201', 65155)
+2024-12-14 13:09:31,487 - INFO - File uploaded: Sample.txt
+2024-12-14 13:09:31,488 - INFO - Client disconnected: ('192.168.1.201', 65155)
+2024-12-14 13:10:00,778 - INFO - Client connected: ('192.168.1.201', 65161)
+2024-12-14 13:10:00,778 - INFO - Received command: DOWNLOAD DS.txt from ('192.168.1.201', 65161)
+2024-12-14 13:10:00,787 - INFO - File sent: DS.txt
+2024-12-14 13:18:10,658 - ERROR - Error handling client ('192.168.1.201', 65161): [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-14 13:18:10,658 - INFO - Client disconnected: ('192.168.1.201', 65161)
+2024-12-14 13:23:31,486 - INFO - Server started on 0.0.0.0:12347
+2024-12-14 13:24:07,238 - INFO - Client connected: ('192.168.1.201', 65202)
+2024-12-14 13:24:07,238 - INFO - Received command: AUTH user1 paasword1 from ('192.168.1.201', 65202)
+2024-12-14 13:24:07,244 - INFO - Client disconnected: ('192.168.1.201', 65202)
+2024-12-14 13:25:50,478 - INFO - Server started on 0.0.0.0:12347
+2024-12-14 13:26:15,920 - INFO - Client connected: ('192.168.1.201', 65212)
+2024-12-14 13:26:15,921 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65212)
+2024-12-14 13:26:15,928 - INFO - Client disconnected: ('192.168.1.201', 65212)
+2024-12-14 13:26:49,717 - INFO - Client connected: ('192.168.1.201', 65216)
+2024-12-14 13:26:49,717 - INFO - Received command: LIST from ('192.168.1.201', 65216)
+2024-12-14 13:26:49,954 - INFO - Client disconnected: ('192.168.1.201', 65216)
+2024-12-14 13:27:10,389 - INFO - Client connected: ('192.168.1.201', 65217)
+2024-12-14 13:27:10,389 - INFO - Received command: UPLOAD Example.txt from ('192.168.1.201', 65217)
+2024-12-14 13:27:10,404 - INFO - File uploaded: Example.txt
+2024-12-14 13:27:10,404 - INFO - Client disconnected: ('192.168.1.201', 65217)
+2024-12-14 13:27:38,687 - INFO - Client connected: ('192.168.1.201', 65220)
+2024-12-14 13:27:38,687 - INFO - Received command: DELETE Ts.txt from ('192.168.1.201', 65220)
+2024-12-14 13:27:38,691 - INFO - File deleted: Ts.txt
+2024-12-14 13:27:38,698 - INFO - Client disconnected: ('192.168.1.201', 65220)
+2024-12-14 13:28:02,325 - INFO - Client connected: ('192.168.1.201', 65245)
+2024-12-14 13:28:02,326 - INFO - Received command: DOWNLOAD DS.txt from ('192.168.1.201', 65245)
+2024-12-14 13:28:02,327 - INFO - File sent: DS.txt
+2024-12-14 13:35:32,038 - INFO - Client connected: ('192.168.1.201', 65299)
+2024-12-14 13:35:32,038 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65299)
+2024-12-14 13:35:32,048 - INFO - Client disconnected: ('192.168.1.201', 65299)
+2024-12-14 13:36:27,124 - INFO - Client connected: ('192.168.1.201', 65305)
+2024-12-14 13:36:27,124 - INFO - Received command: AUTH user1 password from ('192.168.1.201', 65305)
+2024-12-14 13:36:27,133 - INFO - Client disconnected: ('192.168.1.201', 65305)
+2024-12-14 13:36:40,310 - INFO - Client connected: ('192.168.1.201', 65308)
+2024-12-14 13:36:40,310 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65308)
+2024-12-14 13:36:40,317 - INFO - Client disconnected: ('192.168.1.201', 65308)
+2024-12-14 13:37:08,685 - INFO - Client connected: ('192.168.1.201', 65309)
+2024-12-14 13:37:08,685 - INFO - Received command: DOWNLOAD Sample.txt from ('192.168.1.201', 65309)
+2024-12-14 13:37:08,691 - INFO - File sent: Sample.txt
+2024-12-14 13:44:08,079 - INFO - Client connected: ('192.168.1.201', 65345)
+2024-12-14 13:44:08,079 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65345)
+2024-12-14 13:44:08,087 - INFO - Client disconnected: ('192.168.1.201', 65345)
+2024-12-14 13:44:21,766 - INFO - Client connected: ('192.168.1.201', 65346)
+2024-12-14 13:44:21,767 - INFO - Received command: DOWNLOAD Sample.txt from ('192.168.1.201', 65346)
+2024-12-14 13:44:21,767 - INFO - File sent: Sample.txt
+2024-12-14 13:44:21,775 - INFO - Client disconnected: ('192.168.1.201', 65346)
+2024-12-14 13:45:52,598 - INFO - Client connected: ('192.168.1.201', 65352)
+2024-12-14 13:45:52,598 - INFO - Received command: AUTH user1 password1 from ('192.168.1.201', 65352)
+2024-12-14 13:45:52,605 - INFO - Client disconnected: ('192.168.1.201', 65352)
+2024-12-14 13:46:08,290 - INFO - Client connected: ('192.168.1.201', 65354)
+2024-12-14 13:46:08,290 - INFO - Received command: DOWNLOAD Sample.txt from ('192.168.1.201', 65354)
+2024-12-14 13:46:08,290 - INFO - File sent: Sample.txt
