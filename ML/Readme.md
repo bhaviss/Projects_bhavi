@@ -1,4 +1,5 @@
-Machine Learning Projects
+Machine Learning Projects:
+
 Worked on multiple datasets for regression, classification, and clustering, implementing:
 ✅ Principal Component Analysis (PCA) for dimensionality reduction
 ✅ Autoencoders for feature extraction
